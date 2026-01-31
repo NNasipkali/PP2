@@ -97,5 +97,3 @@ for w in words:
     if w == "":
         continue
     print(w)
-
-
