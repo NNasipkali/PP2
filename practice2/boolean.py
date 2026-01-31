@@ -31,3 +31,39 @@ print(True and False)   # False
 print(True or False)    # True
 print(not True)         # False
 #Boolean Operators and/or/not
+
+#6 boolean operators
+x = 3
+
+print(x < 5 or x > 10)   # True
+print(x > 5 or x > 10)   # False
+
+#7 Booleans as Comparison Results
+a = 6
+b = 9
+
+result = a <= b
+print(result)   # True
+
+#8 boolean values 
+a = True
+b = False
+
+print(a)
+print(b)
+
+#9 boolean operators not
+is_logged_in = False
+
+if not is_logged_in:
+    print("Пожалуйста, войдите в систему")
+    
+#10 Booleans as comparison results
+x = 10
+y = 7
+
+print(x > y)     # True
+print(x == y)    # False
+print(x != y)    # True
+
+
