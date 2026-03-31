@@ -131,3 +131,4 @@ if __name__ == "__main__":
 
         elif choice == "7":
             break
+# source venv/bin/activate
