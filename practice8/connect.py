@@ -7,4 +7,4 @@ conn = psycopg2.connect(
     password=""
 )
 
-cursor = conn.cursor()
+cursor = conn.cursor() 
