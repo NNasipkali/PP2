@@ -16,7 +16,7 @@ def insert_contact(name, phone):
     conn.close()
 
 
-def get_contacts():
+def get_contacts(): 
     conn = connect()
     cur = conn.cursor()
 
@@ -91,6 +91,25 @@ def insert_from_csv(filename):
     conn.commit()
     cur.close()
     conn.close()
+    
+# def get_contact_by_id(contact_id):
+#     conn = connect()
+#     cur = conn.cursor()
+
+#     cur.execute(
+#         "SELECT name, phone FROM contacts WHERE id=%s",
+#         (contact_id,)
+#     )
+
+#     row = cur.fetchone()
+
+#     if row:
+#         print("Name:", row[0], "| Phone:", row[1])
+#     else:
+#         print("Not found")
+
+#     cur.close()
+#     conn.close()
 
 
 if __name__ == "__main__":
@@ -102,6 +121,7 @@ if __name__ == "__main__":
         print("5. Search")
         print("6. Load from CSV")
         print("7. Exit")
+        # print("8. Get by ID")
 
         choice = input("Choose: ")
 
@@ -131,4 +151,9 @@ if __name__ == "__main__":
 
         elif choice == "7":
             break
+        
+        # elif choice == "8":
+        #     contact_id = input("Enter ID: ")
+        #     get_contact_by_id(contact_id)
+            
 # source venv/bin/activate
