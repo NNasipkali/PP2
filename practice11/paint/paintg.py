@@ -33,7 +33,7 @@ while running:
             if event.key == pygame.K_e:
                 mode = "eraser"
 
-            # 🔷 новые фигуры
+            # новые фигуры
             if event.key == pygame.K_4:
                 mode = "square"          # NEW
             if event.key == pygame.K_5:
@@ -67,12 +67,12 @@ while running:
             if mode == "circle":
                 pygame.draw.circle(screen, color, start_pos, 25)
 
-            # ⬜ квадрат
+            # квадрат
             if mode == "square":   # NEW
                 size = min(abs(end_pos[0]-start_pos[0]), abs(end_pos[1]-start_pos[1]))
                 pygame.draw.rect(screen, color, (start_pos[0], start_pos[1], size, size))
 
-            # 🔺 прямоугольный треугольник
+            # прямоугольный треугольник
             if mode == "right_triangle":   # NEW
                 pygame.draw.polygon(screen, color, [
                     start_pos,
@@ -80,7 +80,7 @@ while running:
                     end_pos
                 ])
 
-            # 🔺 равносторонний треугольник
+            # равносторонний треугольник
             if mode == "equilateral":   # NEW
                 x, y = start_pos
                 size = 60
@@ -90,7 +90,7 @@ while running:
                     (x + size // 2, y - size)
                 ])
 
-            # 🔷 ромб
+            # ромб
             if mode == "rhombus":   # NEW
                 x, y = start_pos
                 size = 40

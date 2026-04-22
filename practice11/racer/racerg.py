@@ -19,14 +19,14 @@ pygame.display.set_caption("Racer")
 # цвета
 WHITE = (255, 255, 255)
 
-# игрок (машина)
+# игрок
 player = pygame.Rect(180, 500, 50, 70)
 
-# 🔴 ВРАГ (добавили)
+# ВРАГ 
 enemy = pygame.Rect(random.randint(0, WIDTH-50), 0, 50, 70)  # NEW
 enemy_speed = 5  # NEW
 
-# 💰 монеты теперь (rect, value)
+# монеты теперь (rect, value)
 coins = []
 coin_values = [1, 2, 3]  # NEW
 
@@ -52,7 +52,7 @@ while running:
     if keys[pygame.K_RIGHT]:
         player.x += 5
 
-    # 💰 появление монет с value
+    # появление монет с value
     if random.randint(1, 40) == 1:
         x = random.randint(0, WIDTH - 30)  # CHANGED (было 20)
         rect = pygame.Rect(x, 0, 30, 30)   # NEW
@@ -68,7 +68,7 @@ while running:
             coins.remove((coin, value))  # CHANGED
             score += value               # CHANGED (было +1)
 
-    # 🔴 движение врага
+    # движение врага
     enemy.y += enemy_speed  # NEW
 
     if enemy.y > HEIGHT:
@@ -79,7 +79,7 @@ while running:
     if score >= 10:
         enemy_speed = 8  # NEW
 
-    # ❌ столкновение
+    # столкновение
     if player.colliderect(enemy):  # NEW
         print("GAME OVER")
         running = False
@@ -87,7 +87,7 @@ while running:
     # player
     screen.blit(racer_img, (player.x, player.y))
 
-    # 🔴 рисуем врага
+    # рисуем врага
     pygame.draw.rect(screen, (255, 0, 0), enemy)  # NEW
 
     # рисуем монеты

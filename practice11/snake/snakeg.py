@@ -19,12 +19,12 @@ snake = [(100, 100), (80, 100), (60, 100)]
 # направление
 dx = BLOCK
 dy = 0
-
-# 🍎 еда теперь словарь (позиция, value, таймер)
+ 
+# еда теперь словарь 
 food = {                      # CHANGED
     "pos": (200, 200),
     "value": 1,
-    "timer": 100              # NEW (время жизни)
+    "timer": 100              # NEW 
 }
 
 score = 0
@@ -53,7 +53,7 @@ while running:
     head = (snake[0][0] + dx, snake[0][1] + dy)
     snake.insert(0, head)
 
-    # 🍎 уменьшаем таймер еды
+    # уменьшаем таймер еды
     food["timer"] -= 1   # NEW
 
     # если съел еду
@@ -69,7 +69,7 @@ while running:
             if new_pos not in snake:
                 break
 
-        # 🍎 создаем новую еду с value и таймером
+        # создаем новую еду с value и таймером
         food = {                          # NEW
             "pos": new_pos,
             "value": random.choice([1, 2, 3]),  # разный вес
@@ -79,7 +79,7 @@ while running:
     else:
         snake.pop()
 
-    # ⏱️ если еда исчезла (таймер 0)
+    # если еда исчезла (таймер 0)
     if food["timer"] <= 0:   # NEW
         while True:
             new_pos = (
@@ -103,7 +103,7 @@ while running:
     for segment in snake:
         pygame.draw.rect(screen, (0, 255, 0), (*segment, BLOCK, BLOCK))
 
-    # 🍎 рисуем еду
+    # рисуем еду
     pygame.draw.rect(screen, (255, 0, 0), (*food["pos"], BLOCK, BLOCK))  # CHANGED
 
     pygame.display.flip()
