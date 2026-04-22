@@ -107,6 +107,6 @@ while running:
     pygame.draw.rect(screen, (255, 0, 0), (*food["pos"], BLOCK, BLOCK))  # CHANGED
 
     pygame.display.flip()
-    clock.tick(10)
+    clock.tick(10) 
 
 pygame.quit()

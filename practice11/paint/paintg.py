@@ -14,7 +14,7 @@ color = (255, 255, 255)
 # режим
 mode = "brush"
 
-drawing = False
+drawing = False 
 
 running = True
 while running:
@@ -114,4 +114,4 @@ while running:
     pygame.display.flip()
     clock.tick(60)
 
-pygame.quit()
+pygame.quit() 
