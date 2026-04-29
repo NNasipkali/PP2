@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Alice",
+    "phone": "+77001112233",
+    "email": "alice@gmail.com",
+    "birthday": "1995-03-15",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77001112233",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Azamat",
+    "phone": "8 747 177 12 56",
+    "email": "Aza@gmail.com",
+    "birthday": "2007-08-27",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "8 707 189 23 29",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Bob",
+    "phone": "+77002223344",
+    "email": "bob@work.com",
+    "birthday": "1988-07-22",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77002223344",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "name": "Carol",
+    "phone": "+77003334455",
+    "email": "carol@gmail.com",
+    "birthday": "1992-11-05",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77003334455",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "name": "David",
+    "phone": "+77004445566",
+    "email": "david@yahoo.com",
+    "birthday": "1990-01-30",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77004445566",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Eve",
+    "phone": "+77005556677",
+    "email": "eve@gmail.com",
+    "birthday": "1997-06-18",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77005556677",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Nursultan",
+    "phone": "8 707 503 01 61",
+    "email": null,
+    "birthday": null,
+    "group": null,
+    "phones": []
+  },
+  {
+    "name": "Sam",
+    "phone": "8 777 324 02 34",
+    "email": null,
+    "birthday": null,
+    "group": null,
+    "phones": []
+  }
+]
